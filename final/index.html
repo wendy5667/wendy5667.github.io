@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>final flappybird</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 引入我們自己寫的 CSS -->
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid" id="start1">
+        <div id="start">
+            <div id="bird">
+                <button type="button" id="yellowbird"><img src="https://www.shareicon.net/data/128x128/2015/06/21/57597_angry-birds_512x512.png"></button>
+                <button type="button" id="bluebird"><img src="https://www.shareicon.net/data/128x128/2015/06/21/57599_angry-birds_512x512.png"></button>
+                <button type="button" id="redbird"><img src="https://www.shareicon.net/data/128x128/2015/06/21/57605_angry-birds_512x512.png"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="end">
+        <b>score</b>
+        <b id="score">score</b>
+        <button type="button" id="reload"><img src="images/button.png"></button>
+    </div>
+    <canvas id="canvas" width="1280" height="585"></canvas>
+    <script src="flappyBird.js"></script>
+
+
+</body>
+
+</html>
