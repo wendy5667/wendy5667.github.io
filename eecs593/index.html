@@ -58,10 +58,10 @@
 
         <div class="form-row">
             <div class="col-12">
-                <div class="text">Round: <span class="counter">1/20</span></div>
+                <div class="text">Round: <span class="counter">1/15</span></div>
                 <div class="slidercaptcha card">
                     <div class="card-header">
-                        <span>Finish 20 rounds.</span>
+                        <span>Finish 15 rounds.</span>
                     </div>
                     <div class="card-body">
                         <div id="captcha"></div>
@@ -150,7 +150,7 @@
             // },
             onSuccess: function () {  //成功事件
                 counter += 1;
-                if (counter==21) {
+                if (counter==16) {
                     timer = false;
                 } else {
                     console.log("doc", document.getElementsByClassName("counter")[0]);
@@ -166,7 +166,7 @@
 
             onRefresh: function () {
                 counter = 1;
-                document.getElementsByClassName("counter")[0].innerHTML = counter+"/20";
+                document.getElementsByClassName("counter")[0].innerHTML = counter+"/15";
                 var handler = setTimeout(function () {
                     window.clearTimeout(handler);
                     captcha.reset();
